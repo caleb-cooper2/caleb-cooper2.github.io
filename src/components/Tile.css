@@ -1,0 +1,60 @@
+.tile {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .tile-image {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+  }
+  
+  .tile-content {
+    text-align: center;
+  }
+  
+  .tile-title {
+    font-size: 1.5em;
+    margin: 10px 0;
+  }
+  
+  .tile-description {
+    font-size: 1em;
+    margin: 10px 0;
+  }
+  
+  .github-icon {
+    width: 24px;
+    height: 24px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
+  
+  .github-icon:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+  
+  .key-aspects {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .aspect-bubble {
+    background-color: #0073e6;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.9em;
+  }
+  

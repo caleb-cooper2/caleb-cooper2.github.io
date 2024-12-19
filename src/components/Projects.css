@@ -1,0 +1,35 @@
+.projects {
+  padding: 20px;
+  background-color: #eaeaea;
+  margin: 20px 0;
+}
+
+.projects ul {
+  list-style: none;
+  padding: 0;
+}
+
+.project-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.project-info {
+  max-width: 80%;
+}
+
+.github-icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.github-icon:hover {
+  transform: scale(1.1);
+}

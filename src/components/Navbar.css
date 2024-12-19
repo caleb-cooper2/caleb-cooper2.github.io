@@ -1,0 +1,56 @@
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Space between left and right content */
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.icon-links {
+  display: flex;
+  gap: 15px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: black;
+  color: white;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 12px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.2s, opacity 0.2s;
+}
+
+.icon-wrapper {
+  position: relative;
+}
+
+.icon-wrapper:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
