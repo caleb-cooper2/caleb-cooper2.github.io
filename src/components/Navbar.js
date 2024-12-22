@@ -8,7 +8,7 @@ import emailIcon from "../assets/email.png";
 function Navbar() {
   return (
     <nav className="navbar">
-      <h1 className="logo">My Portfolio</h1>
+      <h1 className="logo">Caleb Cooper</h1>
       <div className="icon-links">
         <div className="icon-wrapper">
           <a

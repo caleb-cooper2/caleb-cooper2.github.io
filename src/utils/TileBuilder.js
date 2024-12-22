@@ -6,6 +6,7 @@ class TileBuilder {
         image: null,
         githubLink: null,
         keyAspects: [],
+        projectType: "",
       };
     }
   
@@ -31,6 +32,11 @@ class TileBuilder {
   
     setKeyAspects(aspects) {
       this.tile.keyAspects = aspects;
+      return this;
+    }
+
+    setProjectType(type) {
+      this.tile.projectType = type;
       return this;
     }
   

@@ -2,7 +2,17 @@ import React from "react";
 import "./Tile.css";
 import githubIcon from "../assets/github.png";
 
-function Tile({ title, description, image, githubLink, keyAspects }) {
+function Tile({ title, description, image, githubLink, keyAspects, projectType }) {
+  var bubbleColor = "";
+  var textColor = "";
+  if (projectType === "University") {
+    bubbleColor = "yellow";
+    textColor = "black";
+  } else if (projectType === "Personal") {
+    bubbleColor = "orange";
+  } else {
+    bubbleColor = "red";
+  }
   return (
     <div className="tile">
       {image && <img src={image} alt={`${title} icon`} className="tile-image" />}
@@ -24,6 +34,11 @@ function Tile({ title, description, image, githubLink, keyAspects }) {
           </a>
         )}
         <div className="key-aspects">
+          {projectType && (
+            <span className="aspect-bubble" style={{ backgroundColor: bubbleColor, color: textColor }}>
+              {projectType}
+            </span>
+          )}
           {keyAspects &&
             keyAspects.map((aspect, index) => (
               <span key={index} className="aspect-bubble">
