@@ -11,8 +11,8 @@
   }
   
   .tile-image {
-    width: 60px;
-    height: 60px;
+    width: 760px;
+    height: 425px;
     margin-bottom: 10px;
   }
   
@@ -66,3 +66,26 @@
     font-size: 0.9em;
   }
   
+  .tooltip {
+    position: absolute;
+    bottom: -25px;
+    left: 51%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 12px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.2s, opacity 0.2s;
+  }
+
+  .icon-wrapper {
+    position: relative;
+  }
+  
+  .icon-wrapper:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+  }

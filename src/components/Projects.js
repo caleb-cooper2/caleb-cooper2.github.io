@@ -2,6 +2,8 @@ import React from "react";
 import Tile from "./Tile";
 import TileBuilder from "../utils/TileBuilder";
 import "./Projects.css";
+import winetime from "../assets/winetime.png";
+import resourcestockpiling from "../assets/resourcestockpiling.png";
 
 function Projects() {
   const projectTiles = [
@@ -20,6 +22,7 @@ function Projects() {
         "Working in a team of 6 to create a powerful wine database catalog and recommendation app, offering personalized quizzes, challenges, and a collection of over 130,000 wines for enthusiasts and sommeliers alike."
       )
       .setGithubLink("https://github.com/ccooper6/WineTime")
+      .setImage(winetime)
       .setKeyAspects(["Java", "SQLite", "CSS", "JavaFX"])
       .setProjectType("University")
       .build(),
@@ -38,6 +41,7 @@ function Projects() {
         "Working in a pair tasked with creating a game that showcased our understanding of Java and JavaFX."
       )
       .setGithubLink("https://github.com/ccooper6/Resource-Stockpiling")
+      .setImage(resourcestockpiling)
       .setKeyAspects(["Java", "JavaFX"])
       .setProjectType("University")
       .build(),

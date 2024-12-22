@@ -20,18 +20,20 @@ function Tile({ title, description, image, githubLink, keyAspects, projectType }
         <h3 className="tile-title">{title}</h3>
         <p className="tile-description">{description}</p>
         {githubLink && (
-          <a
-            href={githubLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="github-link"
-          >
-            <img
-              src={githubIcon}
-              alt="GitHub Icon"
-              className="github-icon"
-            />
-          </a>
+          <div className="icon-wrapper">
+            <a
+              href={githubLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={githubIcon}
+                alt="GitHub Icon"
+                className="github-icon"
+              />
+              <div className="tooltip">GitHub Repository</div>
+            </a>
+          </div>
         )}
         <div className="key-aspects">
           {projectType && (
