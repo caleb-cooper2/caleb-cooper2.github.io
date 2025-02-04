@@ -19,7 +19,7 @@ function Projects() {
     new TileBuilder()
       .setTitle("WineTime")
       .setDescription(
-        "Working in a team of 6 to create a powerful wine database catalog and recommendation app, offering personalized quizzes, challenges, and a collection of over 130,000 wines for enthusiasts and sommeliers alike."
+        "Working in a team of 6 to create a powerful wine database catalog and recommendation app, offering personalized quizzes, challenges, and a collection of over 130,000 wines."
       )
       .setGithubLink("https://github.com/ccooper6/WineTime")
       .setImage(winetime)
@@ -29,7 +29,7 @@ function Projects() {
     new TileBuilder()
       .setTitle("Pong")
       .setDescription(
-        "Working in a pair tasked with creating a game that ran on two separate UC FunKit microcontrollers which communicated over IR."
+        "Working in a pair to create a pong game that ran on two UC FunKit microcontrollers which communicated over IR."
       )
       .setGithubLink("https://github.com/ccooper6/UC_FunKit_Pong")
       .setKeyAspects(["C", "Microcontrollers", "IR Communication"])
@@ -38,7 +38,7 @@ function Projects() {
       new TileBuilder()
       .setTitle("Resource Stockpiling")
       .setDescription(
-        "Working in a pair tasked with creating a game that showcased our understanding of Java and JavaFX."
+        "Working in a pair tasked to create a game that showcased our understanding of Java and JavaFX."
       )
       .setGithubLink("https://github.com/ccooper6/Resource-Stockpiling")
       .setImage(resourcestockpiling)

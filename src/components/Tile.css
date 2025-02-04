@@ -11,8 +11,8 @@
   }
   
   .tile-image {
-    width: 760px;
-    height: 425px;
+    max-width: 760px;
+    width: 100%;
     margin-bottom: 10px;
   }
   
