@@ -30,12 +30,12 @@ function Navbar() {
           </a>
           <div className="tooltip">LinkedIn</div>
         </div>
-        <div className="icon-wrapper">
-          <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">  {/* Figure out how to link file */}
-            <img src={resumeIcon} alt="Resume Icon" className="icon" />
-          </a>
-          <div className="tooltip">Resume</div>
-        </div>
+        {/*<div className="icon-wrapper">*/}
+        {/*  <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">  /!* Figure out how to link file *!/*/}
+        {/*    <img src={resumeIcon} alt="Resume Icon" className="icon" />*/}
+        {/*  </a>*/}
+        {/*  <div className="tooltip">Resume</div>*/}
+        {/*</div>*/}
         <div className="icon-wrapper">
           <a href="mailto:calebcooper8812@gmail.com">
             <img src={emailIcon} alt="Email Icon" className="icon" />
