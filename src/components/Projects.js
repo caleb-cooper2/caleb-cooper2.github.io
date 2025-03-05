@@ -23,7 +23,7 @@ function Projects() {
       )
       .setGithubLink("https://github.com/ccooper6/WineTime")
       .setImage(winetime)
-      .setKeyAspects(["Java", "SQLite", "CSS", "JavaFX"])
+      .setKeyAspects(["Java", "SQLite", "CSS", "JavaFX", "JUnit", "Cucumber Testing"])
       .setProjectType("University")
       .build(),
     new TileBuilder()
@@ -42,7 +42,7 @@ function Projects() {
       )
       .setGithubLink("https://github.com/ccooper6/Resource-Stockpiling")
       .setImage(resourcestockpiling)
-      .setKeyAspects(["Java", "JavaFX"])
+      .setKeyAspects(["Java", "JavaFX", "JUnit"])
       .setProjectType("University")
       .build(),
   ];
