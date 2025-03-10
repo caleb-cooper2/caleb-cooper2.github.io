@@ -1,17 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.3f9fd563.css",
-    "main.js": "/static/js/main.dd47fd00.js",
+    "main.css": "/static/css/main.a9fc43a4.css",
+    "main.js": "/static/js/main.44a45013.js",
     "static/media/resourcestockpiling.png": "/static/media/resourcestockpiling.82fd247692b233c3a10c.png",
+    "static/media/cartsyProductPic.png": "/static/media/cartsyProductPic.ece346b27907314e9524.png",
     "static/media/winetime.png": "/static/media/winetime.f59011ca9684f544392e.png",
+    "static/media/cartsyListPic.png": "/static/media/cartsyListPic.0871a215dda829ab818f.png",
+    "static/media/cartsyShopPic.png": "/static/media/cartsyShopPic.fbf1fb40707528ddc9b5.png",
     "static/media/email.png": "/static/media/email.692189a33e53e4ed6018.png",
     "static/media/linkedin.png": "/static/media/linkedin.c9c300fcf0e0786ce78d.png",
+    "static/media/cartsyLogo.svg": "/static/media/cartsyLogo.e677e7a1385b21ba1e993e07d57a384d.svg",
     "index.html": "/index.html",
-    "main.3f9fd563.css.map": "/static/css/main.3f9fd563.css.map",
-    "main.dd47fd00.js.map": "/static/js/main.dd47fd00.js.map"
+    "main.a9fc43a4.css.map": "/static/css/main.a9fc43a4.css.map",
+    "main.44a45013.js.map": "/static/js/main.44a45013.js.map"
   },
   "entrypoints": [
-    "static/css/main.3f9fd563.css",
-    "static/js/main.dd47fd00.js"
+    "static/css/main.a9fc43a4.css",
+    "static/js/main.44a45013.js"
   ]
 }
