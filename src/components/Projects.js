@@ -2,11 +2,28 @@ import React from "react";
 import Tile from "./Tile";
 import TileBuilder from "../utils/TileBuilder";
 import "./Projects.css";
-import winetime from "../assets/winetime.png";
-import resourcestockpiling from "../assets/resourcestockpiling.png";
+import WineTime from "../assets/winetime.png";
+import ResourceStockpiling from "../assets/resourcestockpiling.png";
+import CartsyLogo from "../assets/cartsyLogo.svg";
+import CartsyProduct from "../assets/cartsyProductPic.png";
+import CartsyList from "../assets/cartsyListPic.png";
+import CartsyShop from "../assets/cartsyShopPic.png";
 
 function Projects() {
   const projectTiles = [
+      new TileBuilder()
+        .setTitle("Cartsy")
+        .setDescription(
+            "A full-stack mobile application that helps users find the best deals on groceries by comparing prices " +
+            "from multiple supermarkets. Users can create shopping lists for easy tracking and recieve notifications " +
+            "when their items go on sale. The app is still under development but a demo will be available mid-March so watch this space!"
+        )
+          .setProjectType("Personal")
+          .setUnderConstruction(true)
+          .setLogo(CartsyLogo)
+          .setMultipleImages([CartsyProduct, CartsyList, CartsyShop])
+          .setKeyAspects(["React Native", "JavaScript", "CSS"])
+        .build(),
     new TileBuilder()
       .setTitle("Personal Website")
       .setDescription(
@@ -22,7 +39,7 @@ function Projects() {
         "Working in a team of 6 to create a powerful wine database catalog and recommendation app, offering personalized quizzes, challenges, and a collection of over 130,000 wines."
       )
       .setGithubLink("https://github.com/ccooper6/WineTime")
-      .setImage(winetime)
+      .setImage(WineTime)
       .setKeyAspects(["Java", "SQLite", "CSS", "JavaFX", "JUnit", "Cucumber Testing"])
       .setProjectType("University")
       .build(),
@@ -41,7 +58,7 @@ function Projects() {
         "Working in a pair tasked to create a game that showcased our understanding of Java and JavaFX."
       )
       .setGithubLink("https://github.com/ccooper6/Resource-Stockpiling")
-      .setImage(resourcestockpiling)
+      .setImage(ResourceStockpiling)
       .setKeyAspects(["Java", "JavaFX", "JUnit"])
       .setProjectType("University")
       .build(),

@@ -10,6 +10,28 @@
   align-items: center;
   max-width: 100%;
   box-sizing: border-box;
+  position: relative;
+}
+
+.under-construction-banner {
+  position: absolute;
+  top: 5px;
+  left: -25px;
+  background-color: yellow;
+  color: black;
+  padding: 5px 10px;
+  font-weight: bold;
+  border-radius: 5px;
+  transform: rotate(-15deg);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.tile-logo {
+  max-width: 100px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  margin-bottom: 10px;
 }
 
 .tile-image {
@@ -31,8 +53,9 @@
 
 .tile-description {
   font-size: 1em;
-  margin: 10px 0;
+  margin: auto;
   word-wrap: break-word;
+  max-width: 80%;
 }
 
 .github-icon {
@@ -56,16 +79,7 @@
   flex-wrap: wrap;
 }
 
-.aspect-bubble {
-  background-color: #0073e6;
-  color: white;
-  padding: 5px 10px;
-  border-radius: 15px;
-  font-size: 0.9em;
-  word-wrap: break-word;
-}
-
-.type-bubble {
+.skill-bubble {
   background-color: #0073e6;
   color: white;
   padding: 5px 10px;
@@ -98,7 +112,23 @@
   opacity: 1;
 }
 
-/* Look if the screen is small like a phone using a media query */
+.multiple-images {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.additional-image {
+  max-width: 200px;
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Media query for smaller screens */
 @media (max-width: 600px) {
   .tile {
     padding: 10px;
@@ -117,8 +147,74 @@
     gap: 5px;
   }
 
-  .aspect-bubble, .type-bubble {
+  .skill-bubble {
     font-size: 0.8em;
     padding: 3px 6px;
+  }
+
+  .tile-logo {
+    max-width: 50px;
+    top: 5px;
+    right: 5px;
+  }
+
+  .under-construction-banner {
+    top: 5px;
+    left: -15px;
+    padding: 3px 6px;
+    font-size: 0.8em;
+  }
+
+  .multiple-images {
+    gap: 5px;
+  }
+
+  .additional-image {
+    max-width: 100px;
+  }
+}
+
+@media (max-width: 1100px) and (min-width: 601px) {
+  .tile {
+    padding: 15px;
+    margin: 7px;
+  }
+
+  .tile-title {
+    font-size: 1.3em;
+  }
+
+  .tile-description {
+    font-size: 0.95em;
+  }
+
+  .key-aspects {
+    gap: 7px;
+  }
+
+  .skill-bubble {
+    font-size: 0.85em;
+    padding: 4px 7px;
+  }
+
+  .tile-logo {
+    max-width: 75px;
+    top: 7px;
+    right: 7px;
+  }
+
+  .under-construction-banner {
+    top: 7px;
+    left: -20px;
+    padding: 4px 7px;
+    font-size: 0.85em;
+  }
+
+  .multiple-images {
+    gap: 7px;
+  }
+
+  .additional-image {
+    max-width: 150px;
   }
 }
