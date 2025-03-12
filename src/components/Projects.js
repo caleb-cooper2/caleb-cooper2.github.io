@@ -29,7 +29,7 @@ function Projects() {
       .setDescription(
         "Working with and learning React on the fly to create a personal website to showcase my projects and skills."
       )
-      .setGithubLink("https://github.com/ccooper6/ccooper6.github.io")
+      .setGithubLink("https://github.com/caleb-cooper1/caleb-cooper1.github.io")
       .setKeyAspects(["React", "JavaScript", "HTML", "CSS"])
       .setProjectType("Personal")
       .build(),
@@ -38,7 +38,7 @@ function Projects() {
       .setDescription(
         "Working in a team of 6 to create a powerful wine database catalog and recommendation app, offering personalized quizzes, challenges, and a collection of over 130,000 wines."
       )
-      .setGithubLink("https://github.com/ccooper6/WineTime")
+      .setGithubLink("https://github.com/caleb-cooper1/WineTime")
       .setImage(WineTime)
       .setKeyAspects(["Java", "SQLite", "CSS", "JavaFX", "JUnit", "Cucumber Testing"])
       .setProjectType("University")
@@ -48,7 +48,7 @@ function Projects() {
       .setDescription(
         "Working in a pair to create a pong game that ran on two UC FunKit microcontrollers which communicated over IR."
       )
-      .setGithubLink("https://github.com/ccooper6/UC_FunKit_Pong")
+      .setGithubLink("https://github.com/caleb-cooper1/UC_FunKit_Pong")
       .setKeyAspects(["C", "Microcontrollers", "IR Communication"])
       .setProjectType("University")
       .build(),
@@ -57,7 +57,7 @@ function Projects() {
       .setDescription(
         "Working in a pair tasked to create a game that showcased our understanding of Java and JavaFX."
       )
-      .setGithubLink("https://github.com/ccooper6/Resource-Stockpiling")
+      .setGithubLink("https://github.com/caleb-cooper1/Resource-Stockpiling")
       .setImage(ResourceStockpiling)
       .setKeyAspects(["Java", "JavaFX", "JUnit"])
       .setProjectType("University")
