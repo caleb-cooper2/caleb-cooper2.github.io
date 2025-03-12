@@ -12,7 +12,7 @@ function Navbar() {
       <div className="icon-links">
         <div className="icon-wrapper">
           <a
-            href="https://github.com/ccooper6"
+            href="https://github.com/caleb-cooper1"
             target="_blank"
             rel="noopener noreferrer"
           >
