@@ -16,7 +16,7 @@ function Projects() {
         .setDescription(
             "A full-stack mobile application that helps users find the best deals on groceries by comparing prices " +
             "from multiple supermarkets. Users can create shopping lists for easy tracking and recieve notifications " +
-            "when their items go on sale. The app is still under development but a demo will be available mid-March so watch this space!"
+            "when their items go on sale. The app is still under development but a demo will be available soon, so watch this space!"
         )
           .setProjectType("Personal")
           .setUnderConstruction(true)
