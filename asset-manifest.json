@@ -1,21 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.a9fc43a4.css",
-    "main.js": "/static/js/main.57ac9afb.js",
+    "main.css": "/static/css/main.580c7660.css",
+    "main.js": "/static/js/main.6db5a611.js",
     "static/media/resourcestockpiling.png": "/static/media/resourcestockpiling.82fd247692b233c3a10c.png",
-    "static/media/cartsyProductPic.png": "/static/media/cartsyProductPic.ece346b27907314e9524.png",
     "static/media/winetime.png": "/static/media/winetime.f59011ca9684f544392e.png",
-    "static/media/cartsyListPic.png": "/static/media/cartsyListPic.0871a215dda829ab818f.png",
-    "static/media/cartsyShopPic.png": "/static/media/cartsyShopPic.fbf1fb40707528ddc9b5.png",
+    "static/media/cartsy-product.png": "/static/media/cartsy-product.67344ddfefcb042e874b.png",
+    "static/media/cartsy-graph.png": "/static/media/cartsy-graph.269cf0c8c1fcc9ad5cf1.png",
+    "static/media/cartsy-search.png": "/static/media/cartsy-search.782ea80392d6b4e93b4e.png",
+    "static/media/Caleb-Cooper-CV.pdf": "/static/media/Caleb-Cooper-CV.0f34e224c40a56fbc8ee.pdf",
+    "static/media/cartsy-store.png": "/static/media/cartsy-store.082a520616b17f5221a7.png",
+    "static/media/cartsy-notify.png": "/static/media/cartsy-notify.680546c3827d5fdb6362.png",
     "static/media/email.png": "/static/media/email.692189a33e53e4ed6018.png",
     "static/media/linkedin.png": "/static/media/linkedin.c9c300fcf0e0786ce78d.png",
     "static/media/cartsyLogo.svg": "/static/media/cartsyLogo.e677e7a1385b21ba1e993e07d57a384d.svg",
     "index.html": "/index.html",
-    "main.a9fc43a4.css.map": "/static/css/main.a9fc43a4.css.map",
-    "main.57ac9afb.js.map": "/static/js/main.57ac9afb.js.map"
+    "main.580c7660.css.map": "/static/css/main.580c7660.css.map",
+    "main.6db5a611.js.map": "/static/js/main.6db5a611.js.map"
   },
   "entrypoints": [
-    "static/css/main.a9fc43a4.css",
-    "static/js/main.57ac9afb.js"
+    "static/css/main.580c7660.css",
+    "static/js/main.6db5a611.js"
   ]
 }
