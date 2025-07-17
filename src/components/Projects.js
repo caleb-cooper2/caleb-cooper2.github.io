@@ -5,9 +5,11 @@ import "./Projects.css";
 import WineTime from "../assets/winetime.png";
 import ResourceStockpiling from "../assets/resourcestockpiling.png";
 import CartsyLogo from "../assets/cartsyLogo.svg";
-import CartsyProduct from "../assets/cartsyProductPic.png";
-import CartsyList from "../assets/cartsyListPic.png";
-import CartsyShop from "../assets/cartsyShopPic.png";
+import CartsyGraph from "../assets/cartsy/cartsy-graph.png";
+import CartsyProduct from "../assets/cartsy/cartsy-product.png";
+import CartsySearch from "../assets/cartsy/cartsy-search.png";
+import CartsyNotify from "../assets/cartsy/cartsy-notify.png";
+import CartsyStore from "../assets/cartsy/cartsy-store.png";
 
 function Projects() {
   const projectTiles = [
@@ -15,13 +17,15 @@ function Projects() {
         .setTitle("Cartsy")
         .setDescription(
             "A full-stack mobile application that helps users find the best deals on groceries by comparing prices " +
-            "from multiple supermarkets. Users can create shopping lists for easy tracking and recieve notifications " +
-            "when their items go on sale. The app is still under development but a demo will be available soon, so watch this space!"
+            "from multiple supermarkets. Users can create shopping lists for easy tracking and receive notifications " +
+            "when their items go on sale in their selection of NZ supermarkets. On top of this, users can track price trends " +
+            "via graphs for their selected stores. The app is still under development but " +
+            "is receiving constant updates, so watch this space!"
         )
           .setProjectType("Personal")
           .setUnderConstruction(true)
           .setLogo(CartsyLogo)
-          .setMultipleImages([CartsyProduct, CartsyList, CartsyShop])
+          .setMultipleImages([CartsyNotify, CartsySearch, CartsyProduct, CartsyGraph, CartsyStore])
           .setKeyAspects(["React Native", "JavaScript", "CSS"])
         .build(),
     new TileBuilder()
