@@ -1,4 +1,3 @@
-// File: src/App.js
 import React from "react";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
