@@ -33,7 +33,7 @@ function Projects() {
       .setDescription(
         "Working with and learning React on the fly to create a personal website to showcase my projects and skills."
       )
-      .setGithubLink("https://github.com/caleb-cooper2/caleb-cooper1.github.io")
+      .setGithubLink("https://github.com/caleb-cooper2/caleb-cooper2.github.io")
       .setKeyAspects(["React", "JavaScript", "HTML", "CSS"])
       .setProjectType("Personal")
       .build(),
