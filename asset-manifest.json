@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.580c7660.css",
-    "main.js": "/static/js/main.6202bc0f.js",
+    "main.js": "/static/js/main.a8b9f9ba.js",
     "static/media/resourcestockpiling.png": "/static/media/resourcestockpiling.82fd247692b233c3a10c.png",
     "static/media/winetime.png": "/static/media/winetime.f59011ca9684f544392e.png",
     "static/media/cartsy-product.png": "/static/media/cartsy-product.67344ddfefcb042e874b.png",
@@ -15,10 +15,10 @@
     "static/media/cartsyLogo.svg": "/static/media/cartsyLogo.e677e7a1385b21ba1e993e07d57a384d.svg",
     "index.html": "/index.html",
     "main.580c7660.css.map": "/static/css/main.580c7660.css.map",
-    "main.6202bc0f.js.map": "/static/js/main.6202bc0f.js.map"
+    "main.a8b9f9ba.js.map": "/static/js/main.a8b9f9ba.js.map"
   },
   "entrypoints": [
     "static/css/main.580c7660.css",
-    "static/js/main.6202bc0f.js"
+    "static/js/main.a8b9f9ba.js"
   ]
 }
