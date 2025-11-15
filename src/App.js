@@ -4,15 +4,15 @@ import Projects from "./components/Projects";
 import About from "./components/About";
 
 function App() {
-  return (
-    <div>
-      <Navbar />
-      <main>
-        <About />
-        <Projects />
-      </main>
-    </div>
-  );
+    return (
+        <div>
+            <Navbar />
+            <main>
+                <About />
+                <Projects />
+            </main>
+        </div>
+    );
 }
 
 export default App;

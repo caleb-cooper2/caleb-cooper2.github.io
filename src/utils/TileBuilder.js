@@ -4,6 +4,7 @@ class TileBuilder {
             title: "",
             description: "",
             image: null,
+            redirectLink: null,
             githubLink: null,
             keyAspects: [],
             projectType: "",
@@ -55,6 +56,11 @@ class TileBuilder {
 
     setMultipleImages(images) {
         this.tile.multipleImages = images;
+        return this;
+    }
+
+    setLink(link) {
+        this.tile.redirectLink = link;
         return this;
     }
 
