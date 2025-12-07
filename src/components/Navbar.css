@@ -66,3 +66,42 @@
     visibility: visible;
     opacity: 1;
 }
+
+@media (max-width: 1000px) {
+    .navbar {
+        padding: 10px 25px;
+    }
+
+    .job-title {
+        margin-left: 15px;
+    }
+
+    .icon-links {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 8px 10px;
+    gap: 8px;
+  }
+  .name {
+    font-size: 0.8em;
+    letter-spacing: 2px;
+  }
+  .job-title {
+    font-size: 0.6em;
+    margin-left: 8px;
+  }
+  .icon-links {
+    gap: 16px;
+  }
+  .icon {
+    width: 25px;
+    height: 25px;
+  }
+  .nav-links {
+    gap: 8px;
+  }
+}
