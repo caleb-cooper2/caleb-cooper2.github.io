@@ -83,7 +83,6 @@ function Projects() {
 
     return (
         <section id="projects" className="projects">
-            <h2>My Projects</h2>
             <div className="project-tiles">
                 {projectTiles.map((tile, index) => (
                     <Tile key={index} {...tile} />

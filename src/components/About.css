@@ -1,5 +1,8 @@
 .about {
     padding: 20px;
-    background-color: #f4f4f4;
-    margin: 20px 0;
-  }
+    background-color: #F4F4F4;
+    margin: 20px 250px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}

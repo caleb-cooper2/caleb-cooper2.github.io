@@ -38,6 +38,8 @@
     max-width: 760px;
     width: 100%;
     margin-bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 10px;
 }
 
 .tile-content {
@@ -47,8 +49,13 @@
 
 .tile-title {
     font-size: 1.5em;
-    margin: 10px 0;
+    margin: 10px 0 5px 0;
     word-wrap: break-word;
+    letter-spacing: 3px;
+}
+
+.icons-row {
+    margin-bottom: 15px;
 }
 
 .tile-description {
@@ -80,7 +87,6 @@
 }
 
 .skill-bubble {
-    background-color: #0073e6;
     color: white;
     padding: 5px 10px;
     border-radius: 15px;

@@ -4,31 +4,21 @@ import githubIcon from "../assets/github.png";
 import redirectIcon from "../assets/redirect.svg"
 
 function Tile({ title, description, image, redirectLink, githubLink, keyAspects, projectType, underConstruction, logo, multipleImages }) {
-    var bubbleColor;
-    var textColor = "";
+    let typeColour;
+    let skillColour;
     if (projectType === "University") {
-        bubbleColor = "yellow";
-        textColor = "black";
-    } else if (projectType === "Personal") {
-        bubbleColor = "orange";
+        typeColour = "#3C6E71";
+        skillColour = "#FDC433F7";
     } else {
-        bubbleColor = "red";
+        typeColour = "#FDC433F7";
+        skillColour = "#3C6E71";
     }
     return (
         <div className="tile">
             {underConstruction && <div className="under-construction-banner">Under Construction</div>}
             {logo && <img src={logo} alt="Project Logo" className="tile-logo" />}
-            {image && <img src={image} alt={`${title} icon`} className="tile-image" />}
             <div className="tile-content">
                 <h3 className="tile-title">{title}</h3>
-                {multipleImages.length > 0 && (
-                    <div className="multiple-images">
-                        {multipleImages.map((img, index) => (
-                            <img key={index} src={img} alt={`Additional ${index}`} className="additional-image" />
-                        ))}
-                    </div>
-                )}
-                <p className="tile-description">{description}</p>
                 <div className="icons-row">
                     {githubLink && (
                         <a
@@ -61,15 +51,25 @@ function Tile({ title, description, image, redirectLink, githubLink, keyAspects,
                         </a>
                     )}
                 </div>
+
+                {image && <img src={image} alt={`${title} icon`} className="tile-image" />}
+                {multipleImages.length > 0 && (
+                    <div className="multiple-images">
+                        {multipleImages.map((img, index) => (
+                            <img key={index} src={img} alt={`Additional ${index}`} className="additional-image" />
+                        ))}
+                    </div>
+                )}
+                <p className="tile-description">{description}</p>
                 <div className="key-aspects">
                     {projectType && (
-                        <span className="skill-bubble" style={{ backgroundColor: bubbleColor, color: textColor }}>
+                        <span className="skill-bubble" style={{ backgroundColor: typeColour }}>
               {projectType}
             </span>
                     )}
                     {keyAspects &&
                         keyAspects.map((aspect, index) => (
-                            <span key={index} className="skill-bubble">
+                            <span key={index} className="skill-bubble" style={{ backgroundColor: skillColour }}>
                 {aspect}
               </span>
                         ))}
