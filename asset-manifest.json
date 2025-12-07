@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.c0909db0.css",
+    "main.css": "/static/css/main.cbc2e506.css",
     "main.js": "/static/js/main.b1190ab2.js",
     "static/media/resourcestockpiling.png": "/static/media/resourcestockpiling.82fd247692b233c3a10c.png",
     "static/media/winetime.png": "/static/media/winetime.f59011ca9684f544392e.png",
@@ -16,11 +16,11 @@
     "static/media/cartsyLogo.svg": "/static/media/cartsyLogo.e677e7a1385b21ba1e993e07d57a384d.svg",
     "static/media/redirect.svg": "/static/media/redirect.2f2eea1c35948383034e9fb568f905c1.svg",
     "index.html": "/index.html",
-    "main.c0909db0.css.map": "/static/css/main.c0909db0.css.map",
+    "main.cbc2e506.css.map": "/static/css/main.cbc2e506.css.map",
     "main.b1190ab2.js.map": "/static/js/main.b1190ab2.js.map"
   },
   "entrypoints": [
-    "static/css/main.c0909db0.css",
+    "static/css/main.cbc2e506.css",
     "static/js/main.b1190ab2.js"
   ]
 }
