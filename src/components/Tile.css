@@ -120,22 +120,79 @@
     opacity: 1;
 }
 
-.multiple-images {
+.carousel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 16px 0;
+    position: relative;
+}
+
+.carousel-image {
+    max-width: 275px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    margin-bottom: 8px;
+    object-fit: contain;
+}
+
+.carousel-arrow {
+    background: #284b63;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    font-size: 1.3em;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    opacity: 0.85;
+    transition: background 0.2s, opacity 0.2s;
+}
+
+.carousel-arrow.left {
+    left: 25vw;
+}
+
+.carousel-arrow.right {
+    right: 25vw;
+}
+
+.carousel-arrow:active,
+.carousel-arrow:focus {
+    background: #3c6e71;
+    opacity: 1;
+}
+
+.carousel-dots {
     display: flex;
     justify-content: center;
-    gap: 35px;
-    margin-top: 10px;
-    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 6px;
 }
 
-.additional-image {
-    max-width: 200px;
-    width: 100%;
-    margin-bottom: 10px;
-    border: transparent;
+.carousel-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ccc;
+    display: inline-block;
+    cursor: pointer;
+    transition: background 0.2s;
+    outline: none;
 }
 
-/* Media query for smaller screens */
+.carousel-dot.active {
+    background: #284b63;
+}
+
 @media (max-width: 600px) {
     .tile {
         padding: 10px;
@@ -178,6 +235,30 @@
 
     .additional-image {
         max-width: 100px;
+    }
+
+    .carousel-image {
+        max-width: 180px;
+        border-radius: 7px;
+    }
+
+    .carousel-arrow {
+        width: 26px;
+        height: 26px;
+        font-size: 1em;
+    }
+
+    .carousel-dot {
+        width: 8px;
+        height: 8px;
+    }
+
+    .carousel-arrow.left {
+        left: 0;
+    }
+
+    .carousel-arrow.right {
+        right: 0;
     }
 }
 
@@ -223,5 +304,29 @@
 
     .additional-image {
         max-width: 150px;
+    }
+
+    .carousel-image {
+        max-width: 240px;
+        border-radius: 8px;
+    }
+
+    .carousel-arrow {
+        width: 28px;
+        height: 28px;
+        font-size: 1.1em;
+    }
+
+    .carousel-dot {
+        width: 9px;
+        height: 9px;
+    }
+
+    .carousel-arrow.left {
+        left: 14vw;
+    }
+
+    .carousel-arrow.right {
+        right: 14vw;
     }
 }

@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Tile.css";
 import githubIcon from "../assets/github.png";
-import redirectIcon from "../assets/redirect.svg"
+import redirectIcon from "../assets/redirect.svg";
 
 function Tile({ title, description, image, redirectLink, githubLink, keyAspects, projectType, underConstruction, logo, multipleImages }) {
     let typeColour;
@@ -13,6 +13,20 @@ function Tile({ title, description, image, redirectLink, githubLink, keyAspects,
         typeColour = "#FDC433F7";
         skillColour = "#3C6E71";
     }
+
+    // carousel
+    const [carouselIndex, setCarouselIndex] = useState(0);
+    const hasCarousel = multipleImages && multipleImages.length > 0;
+    const totalImages = hasCarousel ? multipleImages.length : 0;
+
+    const handlePrev = () => {
+        setCarouselIndex((prev) => (prev === 0 ? totalImages - 1 : prev - 1));
+    };
+    const handleNext = () => {
+        setCarouselIndex((prev) => (prev === totalImages - 1 ? 0 : prev + 1));
+    };
+    const goToIndex = (idx) => setCarouselIndex(idx);
+
     return (
         <div className="tile">
             {underConstruction && <div className="under-construction-banner">Under Construction</div>}
@@ -53,11 +67,27 @@ function Tile({ title, description, image, redirectLink, githubLink, keyAspects,
                 </div>
 
                 {image && <img src={image} alt={`${title} icon`} className="tile-image" />}
-                {multipleImages.length > 0 && (
-                    <div className="multiple-images">
-                        {multipleImages.map((img, index) => (
-                            <img key={index} src={img} alt={`Additional ${index}`} className="additional-image" />
-                        ))}
+                {hasCarousel && (
+                    <div className="carousel-container">
+                        <button className="carousel-arrow left" onClick={handlePrev} aria-label="Previous image">❮</button>
+                        <img
+                            src={multipleImages[carouselIndex]}
+                            alt={`Additional ${carouselIndex}`}
+                            className="carousel-image"
+                        />
+                        <button className="carousel-arrow right" onClick={handleNext} aria-label="Next image">❯</button>
+                        <div className="carousel-dots">
+                            {multipleImages.map((_, idx) => (
+                                <span
+                                    key={idx}
+                                    className={`carousel-dot${carouselIndex === idx ? " active" : ""}`}
+                                    onClick={() => goToIndex(idx)}
+                                    aria-label={`Go to image ${idx + 1}`}
+                                    tabIndex={0}
+                                    role="button"
+                                />
+                            ))}
+                        </div>
                     </div>
                 )}
                 <p className="tile-description">{description}</p>
