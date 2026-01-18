@@ -44,10 +44,10 @@ function Projects() {
         new TileBuilder()
             .setTitle("Personal Website")
             .setDescription(
-                "Working with and learning React on the fly to create a personal website to showcase my projects and skills."
+                "Initially working with and learning React on the fly to create a personal website to showcase my projects and skills. Have since migrated the site to Vite for better performance."
             )
             .setGithubLink("https://github.com/caleb-cooper2/caleb-cooper2.github.io")
-            .setKeyAspects(["React", "JavaScript", "HTML", "CSS"])
+            .setKeyAspects(["React", "Vite", "JavaScript", "HTML", "CSS"])
             .setProjectType("Personal")
             .build(),
         new TileBuilder()
