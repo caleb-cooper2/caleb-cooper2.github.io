@@ -6,24 +6,16 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "cra-template": "1.2.0",
     "expo": "^52.0.37",
     "gh-pages": "^6.2.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "web-vitals": "^2.1.4"
+    "react-dom": "^19.0.0"
   },
   "scripts": {
-    "start": "vite",
+    "dev": "vite",
     "build": "vite build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "deploy": "gh-pages -d dist"
   },
   "browserslist": {
     "production": [
