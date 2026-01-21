@@ -6,6 +6,7 @@ export default ({ mode }) => {
         plugins: [react()],
         define: {
             "process.env.NODE_ENV": `"${mode}"`,
-        }
+        },
+        base: '/'
     })
 }

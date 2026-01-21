@@ -29,6 +29,19 @@ function Projects() {
             .setKeyAspects(["React Native", "JavaScript", "CSS"])
             .build(),
         new TileBuilder()
+            .setTitle("PDF Notes to Anki Converter")
+            .setDescription(
+                "A tool that I used to convert my PDF lecture notes into Anki flashcards rapidly during study week. " +
+                "I decided it was a really useful tool and wanted to share it, so created an easy to use interface " +
+                "You are able to tweak various settings to try and get the best results, including choosing from a range of. " +
+                "different OpenAI GPT models to use for the conversion process."
+            )
+            .setGithubLink("https://github.com/caleb-cooper2/Anki-PDF-Converter")
+            .setLink("https://anki.calebcooper.co.nz")
+            .setKeyAspects(["Python", "HTML", "CSS", "OpenAI", "Flask", "nginx", "Docker"])
+            .setProjectType("Personal")
+            .build(),
+        new TileBuilder()
             .setTitle("HammerTime")
             .setDescription(
                 "Year-long SCRUM group project in a team of seven, developing a DIY focused full-stack web application. " +
