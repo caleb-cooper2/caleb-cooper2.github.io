@@ -27,11 +27,11 @@
 }
 
 .tile-logo {
-    max-width: 100px;
     position: absolute;
     top: 10px;
     right: 10px;
     margin-bottom: 10px;
+    height: 10%;
 }
 
 .tile-image {
@@ -217,9 +217,9 @@
     }
 
     .tile-logo {
-        max-width: 50px;
         top: 5px;
         right: 5px;
+        height: 6%
     }
 
     .under-construction-banner {
@@ -286,7 +286,7 @@
     }
 
     .tile-logo {
-        max-width: 75px;
+        height: 6%;
         top: 7px;
         right: 7px;
     }

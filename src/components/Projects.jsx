@@ -4,29 +4,31 @@ import TileBuilder from "../utils/TileBuilder";
 import "./Projects.css";
 import WineTime from "../assets/winetime.png";
 import ResourceStockpiling from "../assets/resourcestockpiling.png";
-import CartsyLogo from "../assets/cartsyLogo.svg";
-import CartsyGraph from "../assets/cartsy/cartsy-graph.png";
-import CartsyProduct from "../assets/cartsy/cartsy-product.png";
+import CartsyLogo from "../assets/cartsy-logo.png";
+import CartsyHome from "../assets/cartsy/cartsy-home.png";
 import CartsySearch from "../assets/cartsy/cartsy-search.png";
-import CartsyNotify from "../assets/cartsy/cartsy-notify.png";
-import CartsyStore from "../assets/cartsy/cartsy-store.png";
+import CartsyItem from "../assets/cartsy/cartsy-item.png";
+import CartsyGraph from "../assets/cartsy/cartsy-graph.png"
+import CartsyList from "../assets/cartsy/cartsy-list.png";
+import CartsyListCompare from "../assets/cartsy/cartsy-list-compare.png";
+import CartsyStores from "../assets/cartsy/cartsy-stores.png";
 
 function Projects() {
     const projectTiles = [
         new TileBuilder()
             .setTitle("Cartsy")
             .setDescription(
-                "A full-stack mobile application that helps users find the best deals on groceries by comparing prices " +
-                "from multiple supermarkets. Users can create shopping lists for easy tracking and receive notifications " +
-                "when their items go on sale in their selection of NZ supermarkets. On top of this, users can track price trends " +
-                "via graphs for their selected stores. The app is still under development but " +
-                "is receiving constant updates, so watch this space!"
+                "A full-stack mobile application that helps users find the best deals on groceries by comparing prices from multiple NZ supermarkets. Users can search the product catalogue, " +
+                "scan barcodes, and add items to shopping lists for easy tracking - with a running total calculated across their selected stores so they always know where to shop. " +
+                "Users receive push notifications when their saved items drop in price, and can track price trends over time via per-product history charts. The app also surfaces current " +
+                "deals and a product spotlight on the home screen to help users discover savings at a glance. The app is currently under development on TestFlight, but is receiving constant updates, so watch " +
+                "this space!"
             )
             .setProjectType("Personal")
             .setUnderConstruction(true)
             .setLogo(CartsyLogo)
-            .setMultipleImages([CartsyNotify, CartsySearch, CartsyProduct, CartsyGraph, CartsyStore])
-            .setKeyAspects(["React Native", "JavaScript", "CSS"])
+            .setMultipleImages([CartsyHome, CartsySearch, CartsyItem, CartsyGraph, CartsyList, CartsyListCompare, CartsyStores])
+            .setKeyAspects(["React Native", "Typescript", "CSS", "Typesense", "Redis", "PostgreSQL"])
             .build(),
         new TileBuilder()
             .setTitle("PDF Notes to Anki Converter")
