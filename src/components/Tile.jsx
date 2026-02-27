@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Tile.css";
 import githubIcon from "../assets/github.png";
 import redirectIcon from "../assets/redirect.svg";
@@ -18,6 +18,16 @@ function Tile({ title, description, image, redirectLink, githubLink, keyAspects,
     const [carouselIndex, setCarouselIndex] = useState(0);
     const hasCarousel = multipleImages && multipleImages.length > 0;
     const totalImages = hasCarousel ? multipleImages.length : 0;
+
+    // Preload all carousel images
+    useEffect(() => {
+        if (hasCarousel) {
+            multipleImages.forEach((src) => {
+                const img = new Image();
+                img.src = src;
+            });
+        }
+    }, [hasCarousel, multipleImages]);
 
     const handlePrev = () => {
         setCarouselIndex((prev) => (prev === 0 ? totalImages - 1 : prev - 1));

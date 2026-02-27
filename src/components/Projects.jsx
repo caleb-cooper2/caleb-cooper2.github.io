@@ -6,6 +6,7 @@ import WineTime from "../assets/winetime.png";
 import ResourceStockpiling from "../assets/resourcestockpiling.png";
 import CartsyLogo from "../assets/cartsy-logo.png";
 import CartsyHome from "../assets/cartsy/cartsy-home.png";
+import CartsyNotify from "../assets/cartsy/cartsy-notify.png";
 import CartsySearch from "../assets/cartsy/cartsy-search.png";
 import CartsyItem from "../assets/cartsy/cartsy-item.png";
 import CartsyGraph from "../assets/cartsy/cartsy-graph.png"
@@ -27,7 +28,7 @@ function Projects() {
             .setProjectType("Personal")
             .setUnderConstruction(true)
             .setLogo(CartsyLogo)
-            .setMultipleImages([CartsyHome, CartsySearch, CartsyItem, CartsyGraph, CartsyList, CartsyListCompare, CartsyStores])
+            .setMultipleImages([CartsyHome, CartsyNotify, CartsySearch, CartsyItem, CartsyGraph, CartsyList, CartsyListCompare, CartsyStores])
             .setKeyAspects(["React Native", "Typescript", "CSS", "Typesense", "Redis", "PostgreSQL"])
             .build(),
         new TileBuilder()
