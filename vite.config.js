@@ -7,6 +7,13 @@ export default ({ mode }) => {
         define: {
             "process.env.NODE_ENV": `"${mode}"`,
         },
+        build: {
+            rollupOptions: {
+                output: {
+                    assetFileNames: `assets/[name].[ext]`
+                }
+            }
+        },
         base: '/'
     })
 }
